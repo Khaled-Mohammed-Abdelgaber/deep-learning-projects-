@@ -4,8 +4,11 @@ deep learning book
 
 to download and unzip datasets using colab to gdrive
 ```
+from google.colab import drive
 import requests
- 
+
+drive.mount('/content/drive')
+
 file_url = "datasets url"
     
 r = requests.get(file_url, stream = True,verify = False) 
