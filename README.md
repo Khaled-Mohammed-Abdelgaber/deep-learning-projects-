@@ -23,3 +23,8 @@ with open("path to download in", "wb") as file:
 !unzip path_to_file.zip -d path_to_directory
 
 ```
+to plot model in tensorflow 2.x 
+```
+from tensorflow.python.keras.utils.vis_utils import plot_model
+plot_model(model, show_shapes=True, show_layer_names=True, to_file='model.png')
+```
