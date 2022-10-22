@@ -43,7 +43,7 @@ gdown.download(url, output, quiet=False)
 to delete folders and files in kaggle or any use the following:
 ```
 import shutil
-
+import os
 os.remove('path') #is to remove a file.
 os.rmdir('path') #is to remove an empty directory.
 shutil.rmtree('path') #is to delete a directory and all its contents
